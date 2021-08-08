@@ -1,0 +1,47 @@
+#divId{
+    background-color: pink !important;
+}
+body{
+    background: white;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size : 50px;
+}
+#h1Id{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/**************************/
+/*    For p,h1 css text   */
+/**************************/
+.orangeTextColor{
+    color : orange;
+}
+
+.orangeTextBColor{
+    background-color : red;
+}
+
+h1.orangeTextBColor{
+    background-color: seagreen;
+}
+h1.orangeTextColor{
+    color: blue;
+}
+h1,h2{
+    color: black;
+}
+/******** Border Styles *********/
+
+.borderRadius{
+    border-radius: 50px;
+}
+.borderStyle{
+    border-style: solid;
+}
+p{
+    border: 2px solid red;
+  border-radius: 50px;
+}
