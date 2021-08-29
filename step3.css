@@ -1,0 +1,30 @@
+.shipping {
+    padding-top: 1.5em;
+}
+
+.personalInfo {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: .1em .5em;
+    margin-right: 1em;
+}
+
+.personalInfo ul {
+    list-style: none;
+}
+
+.personalInfo li {
+    padding: .35em 0;
+}
+
+.personalInfo li:first-child {
+    border-bottom: solid 1px #ccc;
+}
+
+.personalInfo li span:first-child {
+    color: #ccc;
+    display: inline-block;
+    width: 20%;
+    padding-right: .5em;
+    min-width: 65px;
+}

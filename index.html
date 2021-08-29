@@ -1,84 +1,273 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <link  rel="stylesheet" href="temp.css" >
-     
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1 class="orangeTextColor">Hello, world!</h1>
-    <h1 class="orangeTextColor orangeTextBColor">Hello, world!</h1>
-    <h1 id="h1Id" style="color:greenyellow">Hello, world!</h1>
-    <h1 class="orangeTextColor">Hello, world!</h1>
-    <!-- Optional JavaScript; choose one of the two! -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-   
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-    <div class="row orangeTextBColor">
-           <div class="col-md-1">
-                Column 1
-           </div> 
-           <div class="col-md-3">
-                Column 2
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="step3.css">
+
+    <title>Bootstrap Demo</title>
+
+</head>
+
+<body id="cart">
+    <main>
+        <!-- HW- <header id="pgHeader">
+            <figure class="logo"><img src="images/btAkademi_logo.svg" alt="Bot"></figure>
+            <h3><strong>BT Akademi</strong> Cash Management</h3>
+        </header>-->
+        <div class="container">
+            <div class="stepwizard">
+                <div class="stepwizard-row setup-panel">
+                    <div class="stepwizard-step col-xs-3">
+                        <a href="#step-1" type="button" class="btn btn-success "><i class="fa fa-shopping-bag" style="font-size:28px;"></i></a>
+                        <p><small>Shopping Bag</small></p>
+                    </div>
+                    <div class="stepwizard-step col-xs-3">
+                        <a href="#step-2" type="button" class="btn btn-default" disabled="disabled"><i class="far fa-info-circle" style="font-size:28px;"></i></a>
+                        <p><small>Information</small></p>
+                    </div>
+                    <div class="stepwizard-step col-xs-3">
+                        <a href="#step-3" type="button" class="btn btn-default" disabled="disabled"><i class="far fa-truck" style="font-size:28px;"></i></a>
+                        <p><small>Shipping</small></p>
+                    </div>
+                    <div class="stepwizard-step col-xs-3">
+                        <a href="#step-4" type="button" class="btn btn-default" disabled="disabled"><i class="far fa-credit-card" style="font-size:28px;"></i></a>
+                        <p><small>Payment</small></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                Column 3
-            </div>
-    </div>
-    <div id="divId" style="display :table; width: 100%;table-layout: fixed;border-spacing: 10px;height: 100px; background-color: gray;">
-        <div style="display :table-cell; background-color: gray;">
-             Column 1
-        </div> 
-        <div style="display :table-cell; background-color: gray;">
-             Column 2
-         </div>
-         <div style="display :table-cell; background-color: gray;">
-             Column 3
-         </div>
-         <div style="display :table-cell; background-color: gray;">
-            Column 4
+
+            <form role="form" class="was-validated">
+                <div class="panel panel-primary setup-content" id="step-1">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Shopping Bag</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="contentWrapper">
+                            <header class="sectionHeader">
+                                <h3>Shopping Bag</h3>
+                                <div class="lineBorder"></div>
+                            </header>
+
+                            <section class="main">
+                                <article class="item">
+                                    <header>
+                                        <h1>FixIt Bot</h1>
+                                    </header>
+                                    <img src="images/botWrench.jpg" alt="wrench Bot">
+                                    <ul class="details">
+                                        <li>Item: #88423</li>
+                                        <li>Style: Wrench</li>
+                                        <li><a href="#">Edit</a></li>
+                                        <li class="price">$788.00</li>
+                                        <li class="itemAlignCenter">
+                                            <button><i class="fas fa-minus-circle btn subtract"></i></button>
+                                            <input type="number" id="amt"><button><i class="fas fa-plus-circle btn add"></i></button>
+                                        </li>
+                                        <li><a href="#">Save for later</a></li>
+                                    </ul>
+                                </article>
+                            </section>
+
+                            <section id="orderSum">
+                                <header>
+                                    <h3>Order Summary</h3>
+                                </header>
+
+                                <article class="order">
+                                    <ul>
+                                        <li><span>Subtotal</span> <span>$788.00</span></li>
+                                        <li><span>Shipping</span> <span>TBD</span></li>
+                                        <li><span>Estimated Tax</span> <span>$0.00</span></li>
+                                        <li><span>Total</span> <span>$788.00</span></li>
+                                    </ul>
+                                </article>
+                                <!--                <button class="checkout">Proceed to checkout</button>-->
+
+                                <p class="note">Shipping & taxes calculated at checkout</p>
+                            </section>
+                        </div>
+
+
+
+
+                        <button class="btn btn-primary nextBtn pull-right" type="button">Proceed to checkout</button>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary setup-content" id="step-2">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Shipping Information</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="control-label">First Name</label>
+                            <input maxlength="200" type="text" required="required" value="Ibrahim" class="form-control" placeholder="Enter First Name" />
+
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Last Name</label>
+                            <input maxlength="200" type="text" required="required" value="Cetinkaya" class="form-control" placeholder="Enter Last Name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Address</label>
+                            <input maxlength="200" type="text" required="required" value="Istanbul" class="form-control" placeholder="Enter Address" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">(Optional Apartment description)</label>
+                            <input maxlength="200" type="text" class="form-control" placeholder="Enter description" />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputSelect">City</label>
+                                <select class="custom-select" id="inputSelect" required>
+                                    <option value="">Open this select City menu</option>
+                                    <option value="Istanbul">İstanbul</option>
+                                    <option value="Ankara">Ankara</option>
+                                    <option value="Izmir">Izmir</option>
+                                  </select>
+                                <div class="invalid-feedback">Example invalid custom select feedback</div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <input type="text" class="form-control" id="inputState">
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary nextBtn pull-right" type="button">Proceed to checkout</button>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary setup-content" id="step-3">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Shipping</h3>
+                    </div>
+                    <div class="panel-body">
+                        <section class="shipping">
+
+                            <section class="personalInfo">
+                                <ul>
+                                    <li><span>Contact</span><span>ibrahim.ecetinkaya@gmail.com</span></li>
+                                    <li><span>Ship to</span><span>Denizköskler , Kazak Street,Avcılar /Istanbul 34315</span></li>
+                                </ul>
+                            </section>
+                            <form action="#" id="shippingMethod">
+                                <fieldset>
+                                    <legend>Shipping method</legend>
+
+                                    <div id="shippingMethodChoice" class="customRadioBtn">
+                                        <label for="free" class="radioLabel">
+                                             <input type="radio" id="free" name="shipOption" value="0.00" checked>
+                                             <span></span>Free ground shipping (3-7 days) <strong>Free</strong>
+                                         </label>
+                                        <label for="SecondDay" class="radioLabel"> 
+                                             <input type="radio" id="SecondDay" name="shipOption" value="14.99">
+                                             <span></span>Second day shipping (3 days) <strong>$14.99</strong>
+                                         </label>
+                                        <label for="nextDay" class="radioLabel">
+                                             <input type="radio" id="nextDay" name="shipOption" value="21.99">
+                                             <span></span>Next day shipping (2 days) <strong>$21.99</strong>
+                                         </label>
+                                    </div>
+
+
+                                </fieldset>
+                            </form>
+
+                        </section>
+
+                        <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary setup-content" id="step-4">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Cargo</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="control-label">Company Name</label>
+                            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Company Address</label>
+                            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                        </div>
+                        <button class="btn btn-success pull-right" type="submit">Finish!</button>
+                    </div>
+                </div>
+            </form>
         </div>
 
-        
-    </div>
- <table style="display :table; width: 100%;table-layout: fixed;border-spacing: 10px;height: 100px;">
-    <tr>
-        <th style="display :table-cell; background-color: gray;">Column 1</th>
-        <th>Column 2</th>
-        <th>Column 3</th>
-    </tr>
-    <tr>
-        <td>Content</td>
-        <td>Content</td>
-        <td>Content</td>
-    </tr>
-</table>
+        <footer>
+            <p><strong>BT Akademi</strong> &copy; BT Akademi 2021 &copy;</p>
+        </footer>
+    </main>
+    <script>
+        $(document).ready(function() {
 
-<div class="row borderRadius borderStyle">
-    <div class="col-md-1">
-         Column 1
-    </div> 
-    <div class="col-md-3">
-         Column 2
-     </div>
-     <div class="col-md-3">
-         Column 3
-     </div>
-</div>
+            var navListItems = $('div.setup-panel div a'),
+                allWells = $('.setup-content'),
+                allNextBtn = $('.nextBtn');
 
-<p>Lorem ipsum dolor sit amet.</p>
+            allWells.hide();
 
+            navListItems.click(function(e) {
+                e.preventDefault();
+                var $target = $($(this).attr('href')),
+                    $item = $(this);
+
+                if (!$item.hasClass('disabled')) {
+                    navListItems.removeClass('btn-success').addClass('btn-default');
+                    $item.addClass('btn-success');
+                    allWells.hide();
+                    $target.show();
+                    $target.find('input:eq(0)').focus();
+                }
+            });
+
+            allNextBtn.click(function() {
+                var curStep = $(this).closest(".setup-content"),
+                    curStepBtn = curStep.attr("id"),
+                    nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                    curInputs = curStep.find("input[type='text'],input[type='url']"),
+                    isValid = true;
+
+                $(".form-group").removeClass("has-error");
+                for (var i = 0; i < curInputs.length; i++) {
+                    if (!curInputs[i].validity.valid) {
+                        isValid = false;
+                        $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    }
+                }
+
+                if (isValid) nextStepWizard.removeAttr('disabled').trigger('click');
+            });
+
+            $('div.setup-panel div a.btn-success').trigger('click');
+        });
+    </script>
 </body>
+
 </html>
